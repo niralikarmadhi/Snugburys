@@ -6,3 +6,50 @@ button,
     -moz-appearance: none !important;
     -webkit-appearance: none !important;
 }
+
+.btnA {
+    height: 61px;
+    padding-inline: 55px;
+
+    &.bg-FDE5E9-btn {
+        background-color: $color-FDE5E9;
+        border: 2px solid transparent;
+
+        &:hover {
+            border: 2px solid $color-FDE5E9;
+            background-color: transparent;
+        }
+
+    }
+
+    &.bg-505050-btn {
+        border: 2px solid $color-505050;
+        background-color: transparent;
+
+        &:hover {
+            background-color: $color-505050;
+            color: $white !important;
+        }
+    }
+
+    &.bg-white-btn {
+        border: 2px solid $white;
+        background-color: transparent;
+
+        &:hover {
+            background-color: $white;
+            color: $color-F9AFBD !important;
+        }
+    }
+
+    &.white-border-btn {
+        background-color: $white;
+        border: 2px solid transparent;
+
+        &:hover {
+            border: 2px solid $white;
+            background-color: $white;
+        }
+    }
+
+}

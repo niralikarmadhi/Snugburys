@@ -14516,24 +14516,6 @@ progress {
   font-family: "hvdtrial_brandon_text_thin";
 }
 
-/*******************************************************************************
-******************************* COLOUR VARIABLES *******************************
-*******************************************************************************/
-/*******************************************************************************
-******************************* FONTS VARIABLES *******************************
-*******************************************************************************/
-/*******************************************************************************
-******************************* LETTER-SPACING *******************************
-*******************************************************************************/
-/*******************************************************************************
-******************************* LINE HEIGHT *******************************
-*******************************************************************************/
-/*******************************************************************************
-******************************* LETTER SPACING *******************************
-*******************************************************************************/
-/*******************************************************************************
-******************************* ANIMATION VARIABLES ****************************
-*******************************************************************************/
 body,
 html {
   margin: 0px;
@@ -17950,12 +17932,61 @@ button,
   -webkit-appearance: none !important;
 }
 
+.btnA {
+  height: 61px;
+  padding-inline: 55px;
+}
+.btnA.bg-FDE5E9-btn {
+  background-color: #fde5e9;
+  border: 2px solid transparent;
+}
+.btnA.bg-FDE5E9-btn:hover {
+  border: 2px solid #fde5e9;
+  background-color: transparent;
+}
+.btnA.bg-505050-btn {
+  border: 2px solid #505050;
+  background-color: transparent;
+}
+.btnA.bg-505050-btn:hover {
+  background-color: #505050;
+  color: #fff !important;
+}
+.btnA.bg-white-btn {
+  border: 2px solid #fff;
+  background-color: transparent;
+}
+.btnA.bg-white-btn:hover {
+  background-color: #fff;
+  color: #f9afbd !important;
+}
+.btnA.white-border-btn {
+  background-color: #fff;
+  border: 2px solid transparent;
+}
+.btnA.white-border-btn:hover {
+  border: 2px solid #fff;
+  background-color: #fff;
+}
+
 .card-hover .img {
   transform: scale(1);
   transition: 0.3s all ease-in-out;
 }
 .card-hover:hover .img {
   transform: scale(1.1);
+}
+
+.center-img-content-section .center-img-section-img {
+  height: 746px;
+}
+
+.right-img-section .right-img {
+  height: 660px;
+}
+
+.left-img-section .left-img {
+  height: 619px;
 }
 
 .hero-section {
@@ -17966,6 +17997,36 @@ button,
 }
 .hero-section .hero-curve {
   bottom: -2px;
+}
+
+.privacy-section {
+  border-radius: 0px 0px 50px 50px;
+}
+.privacy-section .left-content ul {
+  top: 135px;
+}
+.privacy-section .left-content ul li a::after {
+  content: "";
+  background-image: url("../../../public/assets/images/grey-right-arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translate(0%, -50%);
+  width: 23px;
+  height: 15px;
+  display: none;
+}
+.privacy-section .left-content ul li.active a {
+  padding-left: 30px;
+}
+.privacy-section .left-content ul li.active a::after {
+  display: block;
+}
+.privacy-section .single-content:first-child {
+  padding-top: 0 !important;
 }
 
 /*# sourceMappingURL=main.css.map */
