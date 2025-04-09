@@ -17944,6 +17944,18 @@ button,
   border: 2px solid #505050;
   background-color: transparent;
 }
+.btnA.bg-505050-btn:hover {
+  background-color: #505050;
+  color: #fff !important;
+}
+.btnA.bg-white-btn {
+  border: 2px solid #fff;
+  background-color: transparent;
+}
+.btnA.bg-white-btn:hover {
+  background-color: #fff;
+  color: #F9AFBD !important;
+}
 .btnA.white-border-btn {
   background-color: #fff;
   border: 2px solid transparent;

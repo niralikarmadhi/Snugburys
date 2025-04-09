@@ -25,6 +25,21 @@ button,
     &.bg-505050-btn {
         border: 2px solid $color-505050;
         background-color: transparent;
+
+        &:hover {
+            background-color: $color-505050;
+            color: $white !important;
+        }
+    }
+
+    &.bg-white-btn {
+        border: 2px solid $white;
+        background-color: transparent;
+
+        &:hover {
+            background-color: $white;
+            color: $color-F9AFBD !important;
+        }
     }
 
     &.white-border-btn {
