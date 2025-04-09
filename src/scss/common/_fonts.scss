@@ -1,0 +1,112 @@
+// @font-face {
+//     font-family: "IBM Plex Sans";
+//     src: url('/wp-content/themes/canada/assets/font/IBM Plex Sans.ttf') format('truetype');
+//     font-style: normal;
+// }
+@font-face {
+    font-family: "aptly-black";
+    src: url("../../../public/assets/fonts/aptly-black.otf");
+}
+
+@font-face {
+    font-family: "aptly-bold";
+    src: url("../../../public/assets/fonts/aptly-bold.otf");
+}
+
+@font-face {
+    font-family: "aptly-extra-bold";
+    src: url("../../../public/assets/fonts/aptly-extra-bold.otf");
+}
+
+@font-face {
+    font-family: "aptly-medium";
+    src: url("../../../public/assets/fonts/aptly-medium.otf");
+}
+
+@font-face {
+    font-family: "aptly-regular";
+    src: url("../../../public/assets/fonts/aptly-regular.otf");
+}
+
+@font-face {
+    font-family: "aptly-light";
+    src: url("../../../public/assets/fonts/aptly-light.otf");
+}
+
+@font-face {
+    font-family: "hvdtrial_brandon_text_black";
+    src: url("../../../public/assets/fonts/hvdtrial_brandon_text_black.otf");
+}
+
+@font-face {
+    font-family: "hvdtrial_brandon_text_bold";
+    src: url("../../../public/assets/fonts/hvdtrial_brandon_text_bold.otf");
+}
+
+@font-face {
+    font-family: "hvdtrial_brandon_text_light";
+    src: url("../../../public/assets/fonts/hvdtrial_brandon_text_light.otf");
+}
+
+@font-face {
+    font-family: "hvdtrial_brandon_text_medium";
+    src: url("../../../public/assets/fonts/hvdtrial_brandon_text_medium.otf");
+}
+
+@font-face {
+    font-family: "hvdtrial_brandon_text_regular";
+    src: url("../../../public/assets/fonts/hvdtrial_brandon_text_regular.otf");
+}
+
+@font-face {
+    font-family: "hvdtrial_brandon_text_thin";
+    src: url("../../../public/assets/fonts/hvdtrial_brandon_text_thin.otf");
+}
+
+.aptly-black {
+    font-family: 'aptly-black';
+}
+
+.aptly-bold {
+    font-family: 'aptly-bold';
+}
+
+.aptly-extra-bold {
+    font-family: 'aptly-extra-bold';
+}
+
+.aptly-medium {
+    font-family: 'aptly-medium';
+}
+
+.aptly-regular {
+    font-family: 'aptly-regular';
+}
+
+.aptly-light {
+    font-family: 'aptly-light';
+}
+
+.bradon-black {
+    font-family: 'hvdtrial_brandon_text_black';
+}
+
+.bradon-bold {
+    font-family: 'hvdtrial_brandon_text_bold';
+}
+
+.bradon-light {
+    font-family: 'hvdtrial_brandon_text_light';
+}
+
+.bradon-medium {
+    font-family: 'hvdtrial_brandon_text_medium';
+}
+
+.bradon-regular {
+    font-family: 'hvdtrial_brandon_text_regular';
+}
+
+.bradon-thin {
+    font-family: 'hvdtrial_brandon_text_thin';
+}

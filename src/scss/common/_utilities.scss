@@ -1,0 +1,355 @@
+.text-FDE5E9 {
+    color: $color-FDE5E9;
+}
+
+.text-88B3DA {
+    color: $color-88B3DA;
+}
+
+.text-2F2F2F {
+    color: $color-2F2F2F;
+}
+
+.text-EACAB7 {
+    color: $color-EACAB7;
+}
+
+.text-FFECBC {
+    color: $color-FFECBC;
+}
+
+.text-FFDDE2 {
+    color: $color-FFDDE2;
+}
+
+.text-E4F7EC {
+    color: $color-E4F7EC;
+}
+
+.text-FFD7B5 {
+    color: $color-FFD7B5;
+}
+
+.text-F9AFBD {
+    color: $color-F9AFBD;
+}
+
+.text-505050 {
+    color: $color-505050;
+}
+
+.text-707070 {
+    color: $color-707070;
+}
+
+.text-EAF2F9 {
+    color: $color-EAF2F9;
+}
+
+.bg-FDE5E9 {
+    background-color: $color-FDE5E9;
+}
+
+.bg-88B3DA {
+    background-color: $color-88B3DA;
+}
+
+.bg-2F2F2F {
+    background-color: $color-2F2F2F;
+}
+
+.bg-EACAB7 {
+    background-color: $color-EACAB7;
+}
+
+.bg-FFECBC {
+    background-color: $color-FFECBC;
+}
+
+.bg-FFDDE2 {
+    background-color: $color-FFDDE2;
+}
+
+.bg-E4F7EC {
+    background-color: $color-E4F7EC;
+}
+
+.bg-FFD7B5 {
+    background-color: $color-FFD7B5;
+}
+
+.bg-F9AFBD {
+    background-color: $color-F9AFBD;
+}
+
+.bg-505050 {
+    background-color: $color-505050;
+}
+
+.bg-707070 {
+    background-color: $color-707070;
+}
+
+.bg-EAF2F9 {
+    background-color: $color-EAF2F9;
+}
+
+.font10 {
+    font-size: $font10;
+}
+
+.font14 {
+    font-size: $font14;
+}
+
+.font15 {
+    font-size: $font15;
+}
+
+.font17 {
+    font-size: $font17;
+}
+
+.font21 {
+    font-size: $font21;
+}
+
+.font22 {
+    font-size: $font22;
+}
+
+.font32 {
+    font-size: $font32;
+}
+
+.font77 {
+    font-size: $font77;
+}
+
+.font97 {
+    font-size: $font97;
+}
+
+.font155 {
+    font-size: $font155;
+}
+
+.leading12 {
+    line-height: $leading12;
+}
+
+.leading22 {
+    line-height: $leading22;
+}
+
+.leading17 {
+    line-height: $leading17;
+}
+
+.leading26 {
+    line-height: $leading26;
+}
+
+.leading28 {
+    line-height: $leading28;
+}
+
+.leading30 {
+    line-height: $leading30;
+}
+
+.leading37 {
+    line-height: $leading37;
+}
+
+.leading83 {
+    line-height: $leading83;
+}
+
+.leading85 {
+    line-height: $leading85;
+}
+
+.leading76 {
+    line-height: $leading76;
+}
+
+.leading61 {
+    line-height: $leading61;
+}
+
+.leading97 {
+    line-height: $leading97;
+}
+
+.leading95 {
+    line-height: $leading95;
+}
+
+.leading117 {
+    line-height: $leading117;
+}
+
+.leading137 {
+    line-height: $leading137;
+}
+
+.spacing-0_17 {
+    letter-spacing: $spacing-0_17;
+}
+
+.radius8 {
+    border-radius: $radius8;
+}
+
+.radius20 {
+    border-radius: $radius20;
+}
+
+.radius10 {
+    border-radius: $radius10;
+}
+
+.radius50 {
+    border-radius: $radius50;
+}
+
+.radius30 {
+    border-radius: $radius30;
+}
+
+.radius40 {
+    border-radius: $radius40;
+}
+
+
+@include media-breakpoint-down(lg) {
+
+    .font10 {
+        font-size: $font10;
+    }
+
+    .font14 {
+        font-size: $font14;
+    }
+
+    .font15 {
+        font-size: $font15;
+    }
+
+    .font17 {
+        font-size: $font17;
+    }
+
+    .font21 {
+        font-size: $font21;
+    }
+
+    .font22 {
+        font-size: $font22;
+    }
+
+    .font32 {
+        font-size: $font32;
+    }
+
+    .font77 {
+        font-size: $font77;
+    }
+
+    .font97 {
+        font-size: $font97;
+    }
+
+    .font155 {
+        font-size: $font155;
+    }
+
+    .leading12 {
+        line-height: $leading12;
+    }
+
+    .leading22 {
+        line-height: $leading22;
+    }
+
+    .leading17 {
+        line-height: $leading17;
+    }
+
+    .leading26 {
+        line-height: $leading26;
+    }
+
+    .leading28 {
+        line-height: $leading28;
+    }
+
+    .leading30 {
+        line-height: $leading30;
+    }
+
+    .leading37 {
+        line-height: $leading37;
+    }
+
+    .leading83 {
+        line-height: $leading83;
+    }
+
+    .leading85 {
+        line-height: $leading85;
+    }
+
+    .leading76 {
+        line-height: $leading76;
+    }
+
+    .leading61 {
+        line-height: $leading61;
+    }
+
+    .leading97 {
+        line-height: $leading97;
+    }
+
+    .leading95 {
+        line-height: $leading95;
+    }
+
+    .leading117 {
+        line-height: $leading117;
+    }
+
+    .leading137 {
+        line-height: $leading137;
+    }
+
+    .spacing-0_17 {
+        letter-spacing: $spacing-0_17;
+    }
+
+    .radius8 {
+        border-radius: $radius8;
+    }
+
+    .radius20 {
+        border-radius: $radius20;
+    }
+
+    .radius10 {
+        border-radius: $radius10;
+    }
+
+    .radius50 {
+        border-radius: $radius50;
+    }
+
+    .radius30 {
+        border-radius: $radius30;
+    }
+
+    .radius40 {
+        border-radius: $radius40;
+    }
+}
