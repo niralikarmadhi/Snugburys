@@ -17946,6 +17946,31 @@ button,
   -webkit-appearance: none !important;
 }
 
+.btnA {
+  height: 61px;
+  padding-inline: 55px;
+}
+.btnA.bg-FDE5E9-btn {
+  background-color: #FDE5E9;
+  border: 2px solid transparent;
+}
+.btnA.bg-FDE5E9-btn:hover {
+  border: 2px solid #FDE5E9;
+  background-color: transparent;
+}
+.btnA.bg-505050-btn {
+  border: 2px solid #505050;
+  background-color: transparent;
+}
+.btnA.white-border-btn {
+  background-color: #fff;
+  border: 2px solid transparent;
+}
+.btnA.white-border-btn:hover {
+  border: 2px solid #fff;
+  background-color: #fff;
+}
+
 .card-hover .img {
   transform: scale(1);
   transition: 0.3s all ease-in-out;
