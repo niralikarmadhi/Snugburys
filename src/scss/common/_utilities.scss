@@ -222,6 +222,9 @@
     border-radius: $radius40;
 }
 
+.opacity32{
+    opacity: $opacity32;
+}
 
 @include media-breakpoint-down(lg) {
 

@@ -14,9 +14,48 @@
 </head>
 
 <body>
-<div class="aptly-black font155">
-  hello
-</div>
+  <main>
+
+    <!-- Hero section -->
+
+    <section class="hero-section position-relative overflow-hidden">
+      <div class="bg--part h-100 w-100">
+        <!-- image -->
+        <!-- <img src="./assets/images/hero-bg.png" alt="" class="h-100 w-100 object-cover"> -->
+        <!-- video -->
+        <video loop autoplay muted playsinline data-wf-ignore="true" preload="none" class="w-100 h-100 object-cover"
+          data-object-fit="cover">
+          <source src="./assets/video/clip.mp4" data-wf-ignore="true" />
+        </video>
+        <!-- vimeo -->
+        <!-- <iframe class="w-100 h-100 object-cover"
+          src="https://player.vimeo.com/video/447890547?autoplay=1&loop=1&background=1&controls=0&rel=0&mute=1"
+          allow="autoplay" allowfullscreen>
+        </iframe> -->
+        <!-- youtube -->
+        <!-- <iframe class="w-100 h-100 object-cover"
+          src="https://www.youtube.com/embed/eFHrgaOMfw8?playlist=eFHrgaOMfw8&autoplay=1&loop=1&background=1&controls=0&rel=0&mute=1"
+          allow="autoplay; fullscreen">
+        </iframe> -->
+        <div class="position-absolute w-100 top-left-center z-2">
+          <div class="container">
+            <div class="col-lg-7 mx-auto">
+              <div class="font155 text-center leading137 text-white aptly-bold text-uppercase">it goes without saying</div>
+              <div class="text-center dmt-70 ">
+                <a class="btnA text-decoration-none text-uppercase aptly-bold font22 leading26 text-505050 bg-FDE5E9-btn d-inline-flex justify-content-center align-items-center radius8 transition"
+                  href="">Play Video</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-bg-layer position-absolute h-100 w-100 top-0 bottom-0 opacity32"></div>
+        <div class=" position-absolute w-100 hero-curve">
+          <img src="./assets/images/hero-curve.png" alt="" class="w-100">
+        </div>
+      </div>
+    </section>
+    <div class="spacing dpt-110"></div>
+  </main>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="assets/js/main.js"></script>

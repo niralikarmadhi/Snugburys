@@ -17616,39 +17616,39 @@ textarea {
 ******************************* ANIMATION VARIABLES ****************************
 *******************************************************************************/
 .text-FDE5E9 {
-  color: #FDE5E9;
+  color: #fde5e9;
 }
 
 .text-88B3DA {
-  color: #88B3DA;
+  color: #88b3da;
 }
 
 .text-2F2F2F {
-  color: #2F2F2F;
+  color: #2f2f2f;
 }
 
 .text-EACAB7 {
-  color: #EACAB7;
+  color: #eacab7;
 }
 
 .text-FFECBC {
-  color: #FFECBC;
+  color: #ffecbc;
 }
 
 .text-FFDDE2 {
-  color: #FFDDE2;
+  color: #ffdde2;
 }
 
 .text-E4F7EC {
-  color: #E4F7EC;
+  color: #e4f7ec;
 }
 
 .text-FFD7B5 {
-  color: #FFD7B5;
+  color: #ffd7b5;
 }
 
 .text-F9AFBD {
-  color: #F9AFBD;
+  color: #f9afbd;
 }
 
 .text-505050 {
@@ -17660,43 +17660,43 @@ textarea {
 }
 
 .text-EAF2F9 {
-  color: #EAF2F9;
+  color: #eaf2f9;
 }
 
 .bg-FDE5E9 {
-  background-color: #FDE5E9;
+  background-color: #fde5e9;
 }
 
 .bg-88B3DA {
-  background-color: #88B3DA;
+  background-color: #88b3da;
 }
 
 .bg-2F2F2F {
-  background-color: #2F2F2F;
+  background-color: #2f2f2f;
 }
 
 .bg-EACAB7 {
-  background-color: #EACAB7;
+  background-color: #eacab7;
 }
 
 .bg-FFECBC {
-  background-color: #FFECBC;
+  background-color: #ffecbc;
 }
 
 .bg-FFDDE2 {
-  background-color: #FFDDE2;
+  background-color: #ffdde2;
 }
 
 .bg-E4F7EC {
-  background-color: #E4F7EC;
+  background-color: #e4f7ec;
 }
 
 .bg-FFD7B5 {
-  background-color: #FFD7B5;
+  background-color: #ffd7b5;
 }
 
 .bg-F9AFBD {
-  background-color: #F9AFBD;
+  background-color: #f9afbd;
 }
 
 .bg-505050 {
@@ -17708,7 +17708,7 @@ textarea {
 }
 
 .bg-EAF2F9 {
-  background-color: #EAF2F9;
+  background-color: #eaf2f9;
 }
 
 .font10 {
@@ -17839,6 +17839,10 @@ textarea {
   border-radius: 40px;
 }
 
+.opacity32 {
+  opacity: 32%;
+}
+
 @media (max-width: 991.98px) {
   .font10 {
     font-size: 10px;
@@ -17952,6 +17956,16 @@ button,
 }
 .card-hover:hover .img {
   transform: scale(1.1);
+}
+
+.hero-section {
+  height: 90vh;
+}
+.hero-section .hero-bg-layer {
+  background: linear-gradient(180deg, #000, #fff);
+}
+.hero-section .hero-curve {
+  bottom: -2px;
 }
 
 /*# sourceMappingURL=main.css.map */
