@@ -17979,4 +17979,34 @@ button,
   transform: scale(1.1);
 }
 
+.privacy-section {
+  border-radius: 0px 0px 50px 50px;
+}
+.privacy-section .left-content ul {
+  top: 135px;
+}
+.privacy-section .left-content ul li a::after {
+  content: "";
+  background-image: url("../../../public/assets/images/grey-right-arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translate(0%, -50%);
+  width: 23px;
+  height: 15px;
+  display: none;
+}
+.privacy-section .left-content ul li.active a {
+  padding-left: 30px;
+}
+.privacy-section .left-content ul li.active a::after {
+  display: block;
+}
+.privacy-section .single-content:first-child {
+  padding-top: 0 !important;
+}
+
 /*# sourceMappingURL=main.css.map */

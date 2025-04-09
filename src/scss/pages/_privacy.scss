@@ -1,0 +1,44 @@
+.privacy-section {
+    border-radius: 0px 0px 50px 50px;
+    .left-content {
+        ul {
+            top: 135px;
+
+            li {
+                a {
+
+                    &::after {
+                        content: '';
+                        background-image: url("../../../public/assets/images/grey-right-arrow.svg");
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        position: absolute;
+                        top: 50%;
+                        left: 0px;
+                        transform: translate(0%, -50%);
+                        width: 23px;
+                        height: 15px;
+                        display: none;
+                    }
+                }
+
+                &.active {
+                    a {
+                        padding-left: 30px;
+
+                        &::after {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .single-content {
+        &:first-child {
+            padding-top: 0 !important;
+        }
+    }
+}
