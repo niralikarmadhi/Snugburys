@@ -20433,7 +20433,18 @@ var Plugins = /*#__PURE__*/function () {
   }
   plugins_createClass(Plugins, [{
     key: "init",
-    value: function init() {}
+    value: function init() {
+      this.flavourSlider();
+    }
+  }, {
+    key: "flavourSlider",
+    value: function flavourSlider() {
+      $(".flavour-slider").slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: false
+      });
+    }
   }]);
   return Plugins;
 }();

@@ -30,3 +30,16 @@
         }
     }
 }
+
+.flavour-slider {
+    .slick-list {
+        overflow: visible;
+
+        .slick-track {
+
+            .slick-slide {
+                padding-inline: 8px;
+            }
+        }
+    }
+}

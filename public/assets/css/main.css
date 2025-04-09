@@ -17944,6 +17944,15 @@ button,
   border: 2px solid #fde5e9;
   background-color: transparent;
 }
+.btnA.bg-F9AFBD-btn {
+  background-color: #f9afbd;
+  border: 2px solid transparent;
+  padding-inline: 25px;
+}
+.btnA.bg-F9AFBD-btn:hover {
+  border: 2px solid #f9afbd;
+  background-color: transparent;
+}
 .btnA.bg-505050-btn {
   border: 2px solid #505050;
   background-color: transparent;
@@ -17981,6 +17990,19 @@ button,
   height: 428px;
 }
 
+.flavour-slider .flavour-card {
+  height: 435px;
+}
+.flavour-slider .flavour-card .flavour-img {
+  height: 400px;
+}
+.flavour-slider .flavour-card .flavour-button {
+  bottom: -80px;
+}
+.flavour-slider .flavour-card:hover .flavour-button {
+  bottom: 34px;
+}
+
 .latest-news-slider .slick-list {
   margin-inline: -8px;
 }
@@ -18002,6 +18024,13 @@ button,
 .center-img-content-section .slick-arrows .prev-arrow img,
 .center-img-content-section .slick-arrows .next-arrow img {
   height: 15px;
+}
+
+.flavour-slider .slick-list {
+  overflow: visible;
+}
+.flavour-slider .slick-list .slick-track .slick-slide {
+  padding-inline: 8px;
 }
 
 .center-img-content-section .center-img-section-img {
