@@ -1,0 +1,38 @@
+.faq-section {
+
+    .closet-accordion {
+        .accordion-item {
+            border: none;
+
+            .closet-header {
+                border: 2px solid $color-707070;
+
+                &.active {
+                    background-color: $color-FDE5E9;
+                    border: 2px solid transparent;
+                    padding-bottom: 0!important;
+                }
+
+                .arrow-bg {
+                    height: 47px;
+                    width: 47px;
+
+                    .accordion-arrow {
+                        height: 25px;
+                        transform: rotate(-90deg);
+                    }
+                }
+            }
+
+            .closet-content {
+                display: none;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+            }
+
+            &.active {
+                background-color: $color-FDE5E9;
+            }
+        }
+    }
+}
