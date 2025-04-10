@@ -2,9 +2,9 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-    appearance: none !important;
-    -moz-appearance: none !important;
-    -webkit-appearance: none !important;
+  appearance: none !important;
+  -moz-appearance: none !important;
+  -webkit-appearance: none !important;
 }
 
 .btnA {
@@ -12,9 +12,9 @@ button,
   padding-inline: 55px;
   text-transform: uppercase;
 
-    &.bg-FDE5E9-btn {
-        background-color: $color-FDE5E9;
-        border: 2px solid transparent;
+  &.bg-FDE5E9-btn {
+    background-color: $color-FDE5E9;
+    border: 2px solid transparent;
 
     &:hover {
       border: 2px solid $color-FDE5E9;
@@ -83,15 +83,16 @@ button,
       color: $color-88B3DA;
     }
 
-    &.bg-F9AFBD-btn {
-        background-color: $color-F9AFBD;
-        border: 2px solid transparent;
-        padding-inline: 25px;
+  }
 
-        &:hover {
-            border: 2px solid $color-F9AFBD;
-            background-color: transparent;
-        }
+  &.bg-F9AFBD-btn {
+    background-color: $color-F9AFBD;
+    border: 2px solid transparent;
+    padding-inline: 25px;
+
+    &:hover {
+      border: 2px solid $color-F9AFBD;
+      background-color: transparent;
     }
   }
 
