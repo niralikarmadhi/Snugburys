@@ -18079,7 +18079,7 @@ button,
   z-index: 2;
 }
 
-.offcanvas {
+.offcanvas.header-offcanvas {
   width: 720px !important;
   background-color: #88b3da;
   z-index: 98;
@@ -18088,23 +18088,22 @@ button,
   transition: all 1s ease-in-out !important;
   border-right: 0px !important;
 }
-.offcanvas .offcanvas-body .nav-menu {
+.offcanvas.header-offcanvas .offcanvas-body .nav-menu {
   height: calc(100vh - 160px);
   overflow-y: auto;
   padding-inline: 60px;
 }
-
-.offcanvas {
+.offcanvas.overview-offcanvas {
   width: 446px !important;
   border-radius: 50px 0px 0px 50px;
 }
-.offcanvas .offcanvas-header .btn-close {
+.offcanvas.overview-offcanvas .offcanvas-header .btn-close {
   margin-top: 35px;
   margin-right: 30px;
   height: 32px;
   width: 32px;
 }
-.offcanvas .offcanvas-body .icecream-img {
+.offcanvas.overview-offcanvas .offcanvas-body .icecream-img {
   height: 400px;
 }
 

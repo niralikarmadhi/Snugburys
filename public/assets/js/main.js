@@ -20718,7 +20718,7 @@ var Header = /*#__PURE__*/function () {
     value: function MenuIconOpen() {
       $(document).ready(function () {
         setInterval(function () {
-          if (!$(".offcanvas").hasClass("show")) {
+          if (!$(".header-offcanvas").hasClass("show")) {
             $(".menu-icon").removeClass("open");
           } else {
             $(".menu-icon").addClass("open");
@@ -20756,6 +20756,7 @@ var Header = /*#__PURE__*/function () {
   return Header;
 }();
 ;// CONCATENATED MODULE: ./src/js/main.js
+
 
 
 
