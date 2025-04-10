@@ -1,0 +1,12 @@
+.news-cards-section {
+    .filter-button {
+        height: 61px;
+        background-color: transparent;
+        border: none;
+        padding-inline: 35px;
+    
+        &.active {
+            background-color: $white;
+        }
+    }
+}

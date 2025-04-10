@@ -18100,6 +18100,10 @@ form input.white-input::placeholder {
   height: 428px;
 }
 
+.news-cards .news-card-img {
+  height: 428px;
+}
+
 .offcanvas {
   width: 446px !important;
   border-radius: 50px 0px 0px 50px;
@@ -18217,6 +18221,16 @@ form input.white-input::placeholder {
 
 .left-img-section .left-img {
   height: 619px;
+}
+
+.news-cards-section .filter-button {
+  height: 61px;
+  background-color: transparent;
+  border: none;
+  padding-inline: 35px;
+}
+.news-cards-section .filter-button.active {
+  background-color: #fff;
 }
 
 .hero-section {
