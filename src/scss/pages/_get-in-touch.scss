@@ -2,10 +2,16 @@
 
     .closet-accordion {
         .accordion-item {
-            
+
+            &.first-of-type {
+                border-top-right-radius: 20px !important;
+                border-top-left-radius: 20px !important;
+            }
+
             .closet-header {
                 border-radius: 20px;
                 border: 2px solid $color-707070;
+
                 .arrow-bg {
                     height: 47px;
                     width: 47px;
@@ -17,6 +23,7 @@
                 }
 
                 &.active {
+                    padding-bottom: 25px !important;
                     border-radius: 20px;
                     background-color: $color-FDE5E9;
                     border-bottom: none;
@@ -41,11 +48,7 @@
     }
 }
 
-.question-contact-section {
-    .contact-img {
-        width: 34px;
-    }
-
+.social-icon {
     .social-bg {
         width: 55px;
         height: 55px;
@@ -82,6 +85,11 @@
                 transform: rotate(135deg);
             }
         }
+    }
+}
 
+.question-contact-section {
+    .contact-img {
+        width: 34px;
     }
 }
