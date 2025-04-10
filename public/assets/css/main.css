@@ -18099,14 +18099,16 @@ button,
 }
 
 .center-img-content-section .slick-arrows .prev-arrow,
-.center-img-content-section .slick-arrows .next-arrow {
+.center-img-content-section .slick-arrows .next-arrow, .find-slider-section .slick-arrows .prev-arrow,
+.find-slider-section .slick-arrows .next-arrow {
   background-color: #fff;
   border-radius: 6px;
   height: 50px;
   width: 57px;
 }
 .center-img-content-section .slick-arrows .prev-arrow img,
-.center-img-content-section .slick-arrows .next-arrow img {
+.center-img-content-section .slick-arrows .next-arrow img, .find-slider-section .slick-arrows .prev-arrow img,
+.find-slider-section .slick-arrows .next-arrow img {
   height: 15px;
 }
 
