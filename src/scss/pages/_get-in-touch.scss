@@ -55,19 +55,6 @@
             width: 15px;
         }
     }
-
-    form {
-        input {
-            &.white-input {
-                &::placeholder {
-                    font-size: $font17;
-                    line-height: $leading28;
-                    font-family: "hvdtrial_brandon_text_regular";
-                    color: $color-2F2F2F;
-                }
-            }
-        }
-    }
 }
 
 .faq-content {

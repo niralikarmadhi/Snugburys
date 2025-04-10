@@ -17971,6 +17971,7 @@ button,
 .btnA {
   height: 61px;
   padding-inline: 55px;
+  text-transform: uppercase;
 }
 .btnA.bg-FDE5E9-btn {
   background-color: #fde5e9;
@@ -18033,6 +18034,26 @@ button,
 .btnA.bg-88B3DA-btn.form-btn {
   padding: 0;
 }
+.btnA.bg-F9AFBD-btn {
+  background-color: #f9afbd;
+  border: 2px solid transparent;
+  padding-inline: 85px !important;
+}
+.btnA.bg-F9AFBD-btn:hover {
+  border: 2px solid #f9afbd;
+  background-color: transparent;
+  color: #f9afbd !important;
+}
+
+form input.white-input {
+  height: 61px;
+}
+form input.white-input::placeholder {
+  font-size: 17px;
+  line-height: 28px;
+  font-family: "hvdtrial_brandon_text_regular";
+  color: #2f2f2f !important;
+}
 
 .card-hover .img {
   transform: scale(1);
@@ -18070,6 +18091,15 @@ button,
   height: 428px;
 }
 
+.three-content-cards .three-content-cards-img {
+  width: 251px;
+  height: 251px;
+}
+
+.creation-cards .creation-img {
+  height: 428px;
+}
+
 .offcanvas {
   width: 446px !important;
   border-radius: 50px 0px 0px 50px;
@@ -18085,30 +18115,43 @@ button,
 }
 
 .latest-news-slider .slick-list,
-.flavour-slider .slick-list {
+.flavour-slider .slick-list,
+.creations-slider .slick-list {
   margin-inline: -8px;
 }
 .latest-news-slider .slick-list .slick-slide,
-.flavour-slider .slick-list .slick-slide {
+.flavour-slider .slick-list .slick-slide,
+.creations-slider .slick-list .slick-slide {
   padding-inline: 8px;
 }
 
 .latest-news-slider .slick-list,
-.flavour-slider .slick-list {
+.flavour-slider .slick-list,
+.creations-slider .slick-list {
   overflow: visible !important;
 }
 
 .center-img-content-section .slick-arrows .prev-arrow,
-.center-img-content-section .slick-arrows .next-arrow, .find-slider-section .slick-arrows .prev-arrow,
-.find-slider-section .slick-arrows .next-arrow {
+.center-img-content-section .slick-arrows .next-arrow,
+.find-slider-section .slick-arrows .prev-arrow,
+.find-slider-section .slick-arrows .next-arrow,
+.right-slider-section .slick-arrows .prev-arrow,
+.right-slider-section .slick-arrows .next-arrow,
+.creation-section .slick-arrows .prev-arrow,
+.creation-section .slick-arrows .next-arrow {
   background-color: #fff;
   border-radius: 6px;
   height: 50px;
   width: 57px;
 }
 .center-img-content-section .slick-arrows .prev-arrow img,
-.center-img-content-section .slick-arrows .next-arrow img, .find-slider-section .slick-arrows .prev-arrow img,
-.find-slider-section .slick-arrows .next-arrow img {
+.center-img-content-section .slick-arrows .next-arrow img,
+.find-slider-section .slick-arrows .prev-arrow img,
+.find-slider-section .slick-arrows .next-arrow img,
+.right-slider-section .slick-arrows .prev-arrow img,
+.right-slider-section .slick-arrows .next-arrow img,
+.creation-section .slick-arrows .prev-arrow img,
+.creation-section .slick-arrows .next-arrow img {
   height: 15px;
 }
 
@@ -18121,6 +18164,47 @@ button,
   top: 50%;
   font-size: 167px;
   left: -40px;
+}
+
+.right-slider {
+  margin-bottom: 0px !important;
+  height: 601px;
+}
+.right-slider .right-slider-section-img {
+  height: 601px;
+}
+.right-slider .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 35px !important;
+}
+.right-slider .slick-dots li {
+  height: 10px;
+  width: 10px;
+  background-color: rgba(0, 0, 0, 0.33);
+  border-radius: 50%;
+  margin-inline: 6px !important;
+}
+.right-slider .slick-dots li.slick-active {
+  border: 1px solid #f9afbd;
+  height: 16px;
+  width: 16px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right-slider .slick-dots li.slick-active::after {
+  content: "";
+  height: 10px;
+  width: 10px;
+  background-color: #f9afbd;
+  border-radius: 50%;
+  display: block;
+}
+.right-slider .slick-dots li button {
+  display: none !important;
 }
 
 .center-img-content-section .center-img-section-img {
@@ -18216,12 +18300,6 @@ button,
 }
 .question-contact-section .social-bg .social-icon {
   width: 15px;
-}
-.question-contact-section form input.white-input::placeholder {
-  font-size: 17px;
-  line-height: 28px;
-  font-family: "hvdtrial_brandon_text_regular";
-  color: #2f2f2f;
 }
 
 .faq-content {

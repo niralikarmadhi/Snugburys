@@ -10,6 +10,7 @@ button,
 .btnA {
   height: 61px;
   padding-inline: 55px;
+  text-transform: uppercase;
 
   &.bg-FDE5E9-btn {
     background-color: $color-FDE5E9;
@@ -71,6 +72,7 @@ button,
       color: $white !important;
     }
   }
+
   &.bg-88B3DA-btn {
     background-color: $color-88B3DA;
     border: 2px solid transparent;
@@ -83,6 +85,18 @@ button,
 
     &.form-btn {
       padding: 0;
+    }
+  }
+
+  &.bg-F9AFBD-btn {
+    background-color: $color-F9AFBD;
+    border: 2px solid transparent;
+    padding-inline: 85px !important;
+
+    &:hover {
+      border: 2px solid $color-F9AFBD;
+      background-color: transparent;
+      color: $color-F9AFBD !important;
     }
   }
 }
