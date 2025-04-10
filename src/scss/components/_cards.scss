@@ -17,24 +17,35 @@
   }
 }
 
-.flavour-slider {
-  .flavour-card {
-    height: 435px;
 
-    .flavour-img {
-      height: 400px;
-    }
+.flavour-card {
+  height: 435px;
 
+  .flavour-img {
+    height: 400px;
+  }
+
+  .flavour-button {
+    bottom: -80px;
+  }
+
+  &:hover {
     .flavour-button {
-      bottom: -80px;
+      bottom: 34px;
     }
+  }
+}
 
-    &:hover {
-      .flavour-button {
-        bottom: 34px;
-      }
+.two-cards {
+  height: 447px;
 
+  .two-card-layer {
+    background-color: rgba($color: $black, $alpha: 0.15);
+  }
+}
 
-    }
+.related-cards {
+  .related-cards-img {
+    height: 428px;
   }
 }
