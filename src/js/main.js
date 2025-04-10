@@ -3,6 +3,7 @@ import '@popperjs/core';
 import 'bootstrap/dist/js/bootstrap';
 import 'select2/dist/js/select2.min.js';
 import '../../node_modules/masonry-layout/dist/masonry.pkgd.min';
+import "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min";
 
 import { App } from './parts/app.js'
 import { Plugins } from './parts/plugins.js'
