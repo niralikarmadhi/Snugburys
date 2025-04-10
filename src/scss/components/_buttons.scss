@@ -71,4 +71,18 @@ button,
       color: $white !important;
     }
   }
+  &.bg-88B3DA-btn {
+    background-color: $color-88B3DA;
+    border: 2px solid transparent;
+
+    &:hover {
+      border: 2px solid $color-88B3DA;
+      background-color: transparent;
+      color: $color-88B3DA;
+    }
+
+    &.form-btn {
+      padding: 0;
+    }
+  }
 }

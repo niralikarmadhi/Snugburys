@@ -20600,6 +20600,7 @@ var Accordion = /*#__PURE__*/function () {
     key: "init",
     value: function init() {
       this.Accordion();
+      this.second();
     }
   }, {
     key: "Accordion",
@@ -20612,6 +20613,19 @@ var Accordion = /*#__PURE__*/function () {
         $('.closet-header').click(function () {
           $(this).toggleClass('active').next('.closet-content').slideToggle();
           $('.closet-header').not(this).removeClass('active').next('.closet-content').slideUp();
+        });
+      });
+    }
+  }, {
+    key: "second",
+    value: function second() {
+      $(document).ready(function () {
+        // Open the first child by default
+        $('.faq-header').first().addClass('active').next('.faq-content').slideDown();
+        // Handle click events for closet headers
+        $('.faq-header').click(function () {
+          $(this).toggleClass('active').next('.faq-content').slideToggle();
+          $('.faq-header').not(this).removeClass('active').next('.faq-content').slideUp();
         });
       });
     }

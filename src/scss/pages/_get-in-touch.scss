@@ -1,0 +1,100 @@
+.faq-section {
+
+    .closet-accordion {
+        .accordion-item {
+            
+            .closet-header {
+                border-radius: 20px;
+                border: 2px solid $color-707070;
+                .arrow-bg {
+                    height: 47px;
+                    width: 47px;
+
+                    .accordion-arrow {
+                        width: 17px;
+                        transform: rotate(45deg) translate(0px, -2px);
+                    }
+                }
+
+                &.active {
+                    border-radius: 20px;
+                    background-color: $color-FDE5E9;
+                    border-bottom: none;
+                    border-bottom-left-radius: 0px;
+                    border-bottom-right-radius: 0px;
+
+                    .accordion-arrow {
+                        transform: rotate(90deg) translate(0px, -2px);
+                    }
+                }
+            }
+
+            .closet-content {
+                display: none;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                border-bottom: 2px solid $color-707070;
+                border-right: 2px solid $color-707070;
+                border-left: 2px solid $color-707070;
+            }
+        }
+    }
+}
+
+.question-contact-section {
+    .contact-img {
+        width: 34px;
+    }
+
+    .social-bg {
+        width: 55px;
+        height: 55px;
+        border: 1.5px solid $color-707070;
+
+        .social-icon {
+            width: 15px;
+        }
+    }
+
+    form {
+        input {
+            &.white-input {
+                &::placeholder {
+                    font-size: $font17;
+                    line-height: $leading28;
+                    font-family: "hvdtrial_brandon_text_regular";
+                    color: $color-2F2F2F;
+                }
+            }
+        }
+    }
+}
+
+.faq-content {
+    display: none;
+}
+
+.accordion-item {
+    &:first-child {
+        border-top: 1px solid $white;
+    }
+
+    border-bottom: 1px solid $white;
+
+    .faq-header {
+        .accordion-arrow {
+            height: 25px;
+
+            @include media-breakpoint-up(lg) {
+                height: 30px;
+            }
+        }
+
+        &.active {
+            .accordion-arrow {
+                transform: rotate(135deg);
+            }
+        }
+
+    }
+}
