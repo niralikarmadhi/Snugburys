@@ -27,6 +27,41 @@
   text-overflow: ellipsis;
 }
 
+.row {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+
+  &>* {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
+
+.row8 {
+  margin-left: -8px !important;
+  margin-right: -8px !important;
+
+  &>* {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+}
+
+.spacing-border {
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.row11 {
+  margin-left: -11px !important;
+  margin-right: -11px !important;
+
+  &>* {
+    padding-left: 11px !important;
+    padding-right: 11px !important;
+  }
+}
+
 @include media-breakpoint-down(lg) {
   .px-p-0 {
     padding-left: 0 !important;

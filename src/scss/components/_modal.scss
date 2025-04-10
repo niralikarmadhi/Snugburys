@@ -1,0 +1,19 @@
+.offcanvas {
+    width: 446px !important;
+    border-radius: 50px 0px 0px 50px;
+
+    .offcanvas-header {
+        .btn-close {
+            margin-top: 35px;
+            margin-right: 30px;
+            height: 32px;
+            width: 32px;
+        }
+    }
+
+    .offcanvas-body {
+        .icecream-img {
+            height: 400px;
+        }
+    }
+}
