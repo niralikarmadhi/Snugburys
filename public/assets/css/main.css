@@ -18234,5 +18234,16 @@ button,
 .map-section {
   border-radius: 0px 0px 50px 50px;
 }
+.map-section .map-content {
+  height: 482px;
+}
+
+.news-content-section .news-open-img {
+  height: 610px;
+}
+.news-content-section .news-left-content {
+  top: 230px;
+  height: calc(100vh - 500px);
+}
 
 /*# sourceMappingURL=main.css.map */

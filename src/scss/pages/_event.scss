@@ -1,9 +1,13 @@
-.national-img-section{
-    .national-img{
+.national-img-section {
+    .national-img {
         height: 655px;
-    }   
+    }
 }
 
-.map-section{
+.map-section {
     border-radius: 0px 0px 50px 50px;
+
+    .map-content{
+        height: 482px;
+    }
 }
