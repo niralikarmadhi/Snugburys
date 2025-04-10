@@ -2,10 +2,16 @@
 
     .closet-accordion {
         .accordion-item {
-            
+
+            &.first-of-type {
+                border-top-right-radius: 20px!important;
+                border-top-left-radius: 20px!important;
+            }
+
             .closet-header {
                 border-radius: 20px;
                 border: 2px solid $color-707070;
+
                 .arrow-bg {
                     height: 47px;
                     width: 47px;
@@ -17,6 +23,7 @@
                 }
 
                 &.active {
+                    padding-bottom: 25px!important;
                     border-radius: 20px;
                     background-color: $color-FDE5E9;
                     border-bottom: none;
@@ -67,34 +74,5 @@
                 }
             }
         }
-    }
-}
-
-.faq-content {
-    display: none;
-}
-
-.accordion-item {
-    &:first-child {
-        border-top: 1px solid $white;
-    }
-
-    border-bottom: 1px solid $white;
-
-    .faq-header {
-        .accordion-arrow {
-            height: 25px;
-
-            @include media-breakpoint-up(lg) {
-                height: 30px;
-            }
-        }
-
-        &.active {
-            .accordion-arrow {
-                transform: rotate(135deg);
-            }
-        }
-
     }
 }

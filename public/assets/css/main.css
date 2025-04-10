@@ -18175,6 +18175,10 @@ button,
   padding-top: 0 !important;
 }
 
+.faq-section .closet-accordion .accordion-item.first-of-type {
+  border-top-right-radius: 20px !important;
+  border-top-left-radius: 20px !important;
+}
 .faq-section .closet-accordion .accordion-item .closet-header {
   border-radius: 20px;
   border: 2px solid #707070;
@@ -18188,6 +18192,7 @@ button,
   transform: rotate(45deg) translate(0px, -2px);
 }
 .faq-section .closet-accordion .accordion-item .closet-header.active {
+  padding-bottom: 25px !important;
   border-radius: 20px;
   background-color: #fde5e9;
   border-bottom: none;
@@ -18222,28 +18227,6 @@ button,
   line-height: 28px;
   font-family: "hvdtrial_brandon_text_regular";
   color: #2f2f2f;
-}
-
-.faq-content {
-  display: none;
-}
-
-.accordion-item {
-  border-bottom: 1px solid #fff;
-}
-.accordion-item:first-child {
-  border-top: 1px solid #fff;
-}
-.accordion-item .faq-header .accordion-arrow {
-  height: 25px;
-}
-@media (min-width: 992px) {
-  .accordion-item .faq-header .accordion-arrow {
-    height: 30px;
-  }
-}
-.accordion-item .faq-header.active .accordion-arrow {
-  transform: rotate(135deg);
 }
 
 /*# sourceMappingURL=main.css.map */
