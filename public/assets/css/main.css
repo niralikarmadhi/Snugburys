@@ -18038,12 +18038,12 @@ button,
 .btnA.bg-88B3DA-btn.form-btn {
   padding: 0;
 }
-.btnA.bg-F9AFBD-btn {
+.btnA.bg-F9AFBD-btn-contact {
   background-color: #f9afbd;
   border: 2px solid transparent;
   padding-inline: 85px !important;
 }
-.btnA.bg-F9AFBD-btn:hover {
+.btnA.bg-F9AFBD-btn-contact:hover {
   border: 2px solid #f9afbd;
   background-color: transparent;
   color: #f9afbd !important;
