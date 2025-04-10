@@ -17861,6 +17861,10 @@ textarea {
   opacity: 32%;
 }
 
+.border-505050 {
+  border-color: #505050 !important;
+}
+
 @media (max-width: 991.98px) {
   .font10 {
     font-size: 10px;
@@ -18104,6 +18108,17 @@ form input.white-input::placeholder {
   height: 428px;
 }
 
+.news-two-panel-section .right-image {
+  height: 565px;
+}
+
+.upcoming-events .event--img {
+  height: 470px;
+}
+.upcoming-events .event-content {
+  padding-inline: 70px 58px;
+}
+
 .offcanvas {
   width: 446px !important;
   border-radius: 50px 0px 0px 50px;
@@ -18221,6 +18236,28 @@ form input.white-input::placeholder {
 
 .left-img-section .left-img {
   height: 619px;
+}
+
+.left-right-with-logo-section .left-right-img {
+  height: 578px;
+}
+.left-right-with-logo-section .logo--img {
+  height: 160px;
+  width: 160px;
+  right: -72px;
+  top: 85px;
+}
+.left-right-with-logo-section .right-img .logo--img {
+  left: -72px;
+  top: 85px;
+}
+
+.two-panel-section .bg--section {
+  padding-inline: 76px 66px;
+}
+
+.news-two-panel-section .bg--section {
+  padding-inline: 58px;
 }
 
 .news-cards-section .filter-button {
