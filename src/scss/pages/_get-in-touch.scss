@@ -3,13 +3,14 @@
     .closet-accordion {
         .accordion-item {
 
-            &.first-of-type {
-                border-top-right-radius: 20px !important;
-                border-top-left-radius: 20px !important;
-            }
+            // &.first-of-type {
+            //     border-top-right-radius: 20px !important;
+            //     border-top-left-radius: 20px !important;
+            // }
 
             .closet-header {
-                border-radius: 20px;
+                padding-left: 50px;
+                padding-right: 30px;
                 border: 2px solid $color-707070;
 
                 .arrow-bg {
@@ -24,9 +25,8 @@
 
                 &.active {
                     padding-bottom: 25px !important;
-                    border-radius: 20px;
                     background-color: $color-FDE5E9;
-                    border-bottom: none;
+                    border: none;
                     border-bottom-left-radius: 0px;
                     border-bottom-right-radius: 0px;
 
@@ -40,9 +40,7 @@
                 display: none;
                 border-bottom-left-radius: 20px;
                 border-bottom-right-radius: 20px;
-                border-bottom: 2px solid $color-707070;
-                border-right: 2px solid $color-707070;
-                border-left: 2px solid $color-707070;
+                background-color: $color-FDE5E9;
             }
         }
     }
