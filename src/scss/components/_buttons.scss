@@ -8,17 +8,79 @@ button,
 }
 
 .btnA {
-    height: 61px;
-    padding-inline: 55px;
+  height: 61px;
+  padding-inline: 55px;
+  text-transform: uppercase;
 
     &.bg-FDE5E9-btn {
         background-color: $color-FDE5E9;
         border: 2px solid transparent;
 
-        &:hover {
-            border: 2px solid $color-FDE5E9;
-            background-color: transparent;
-        }
+    &:hover {
+      border: 2px solid $color-FDE5E9;
+      background-color: transparent;
+    }
+  }
+
+  &.bg-F9AFBD-btn {
+    background-color: $color-F9AFBD;
+    border: 2px solid transparent;
+    padding-inline: 25px;
+
+    &:hover {
+      border: 2px solid $color-F9AFBD;
+      background-color: transparent;
+    }
+  }
+
+  &.bg-505050-btn {
+    border: 2px solid $color-505050;
+    background-color: transparent;
+
+    &:hover {
+      background-color: $color-505050;
+      color: $white !important;
+    }
+  }
+
+  &.bg-white-btn {
+    border: 2px solid $white;
+    background-color: transparent;
+
+    &:hover {
+      background-color: $white;
+      color: $color-F9AFBD !important;
+    }
+  }
+
+  &.white-border-btn {
+    background-color: $white;
+    border: 2px solid transparent;
+
+    &:hover {
+      border: 2px solid $white;
+      background-color: $white;
+    }
+  }
+
+  &.bg-707070-btn {
+    background-color: transparent;
+    border: 2px solid $color-707070;
+
+    &:hover {
+      background-color: $color-707070 !important;
+      color: $white !important;
+    }
+  }
+
+  &.bg-88B3DA-btn {
+    background-color: $color-88B3DA;
+    border: 2px solid transparent;
+
+    &:hover {
+      border: 2px solid $color-88B3DA;
+      background-color: transparent;
+      color: $color-88B3DA;
     }
 
     &.bg-F9AFBD-btn {
@@ -31,55 +93,17 @@ button,
             background-color: transparent;
         }
     }
+  }
 
-    &.bg-505050-btn {
-        border: 2px solid $color-505050;
-        background-color: transparent;
+  &.bg-F9AFBD-btn-contact {
+    background-color: $color-F9AFBD;
+    border: 2px solid transparent;
+    padding-inline: 85px !important;
 
-        &:hover {
-            background-color: $color-505050;
-            color: $white !important;
-        }
+    &:hover {
+      border: 2px solid $color-F9AFBD;
+      background-color: transparent;
+      color: $color-F9AFBD !important;
     }
-
-    &.bg-white-btn {
-        border: 2px solid $white;
-        background-color: transparent;
-
-        &:hover {
-            background-color: $white;
-            color: $color-F9AFBD !important;
-        }
-    }
-
-    &.white-border-btn {
-        background-color: $white;
-        border: 2px solid transparent;
-
-        &:hover {
-            border: 2px solid $white;
-            background-color: $white;
-        }
-    }
-
-    &.bg-707070-btn {
-        background-color: transparent;
-        border: 2px solid $color-707070;
-
-        &:hover {
-            background-color: $color-707070 !important;
-            color: $white !important;
-        }
-    }
-
-    &.bg-88B3DA-btn {
-        background-color: $color-88B3DA;
-        border: 2px solid transparent;
-
-        &:hover {
-            border: 2px solid $color-88B3DA;
-            background-color: transparent;
-            color: $color-88B3DA;
-        }
-    }
+  }
 }
