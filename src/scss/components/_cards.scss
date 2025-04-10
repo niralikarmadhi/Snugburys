@@ -1,12 +1,52 @@
 .card-hover {
-    .img {
-        transform: scale(1);
-        transition: 0.3s all ease-in-out;
-    }
+  .img {
+    transform: scale(1);
+    transition: 0.3s all ease-in-out;
+  }
 
-    &:hover {
-        .img {
-            transform: scale(1.1);
-        }
+  &:hover {
+    .img {
+      transform: scale(1.1);
     }
+  }
+}
+
+.news-cards {
+  .latest-news-img {
+    height: 428px;
+  }
+}
+
+
+.flavour-card {
+  height: 435px;
+
+  .flavour-img {
+    height: 400px;
+  }
+
+  .flavour-button {
+    bottom: -80px;
+  }
+
+  &:hover {
+    .flavour-button {
+      bottom: 34px;
+    }
+  }
+
+}
+
+.two-cards {
+  height: 447px;
+
+  .two-card-layer {
+    background-color: rgba($color: $black, $alpha: 0.15);
+  }
+}
+
+.related-cards {
+  .related-cards-img {
+    height: 428px;
+  }
 }
