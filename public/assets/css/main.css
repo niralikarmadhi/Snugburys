@@ -18030,9 +18030,6 @@ button,
   background-color: transparent;
   color: #88b3da;
 }
-.btnA.bg-88B3DA-btn.form-btn {
-  padding: 0;
-}
 
 .card-hover .img {
   transform: scale(1);
@@ -18211,22 +18208,31 @@ button,
   border-left: 2px solid #707070;
 }
 
-.question-contact-section .contact-img {
-  width: 34px;
-}
-.question-contact-section .social-bg {
+.social-icon .social-bg {
   width: 55px;
   height: 55px;
   border: 1.5px solid #707070;
 }
-.question-contact-section .social-bg .social-icon {
+.social-icon .social-bg .social-icon {
   width: 15px;
+}
+
+.question-contact-section .contact-img {
+  width: 34px;
 }
 .question-contact-section form input.white-input::placeholder {
   font-size: 17px;
   line-height: 28px;
   font-family: "hvdtrial_brandon_text_regular";
   color: #2f2f2f;
+}
+
+.national-img-section .national-img {
+  height: 655px;
+}
+
+.map-section {
+  border-radius: 0px 0px 50px 50px;
 }
 
 /*# sourceMappingURL=main.css.map */
