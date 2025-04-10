@@ -1,0 +1,19 @@
+.footer {
+  margin-top: -50px;
+  z-index: -1;
+
+  .location-icon {
+    height: 33px;
+  }
+
+  .footer-menu {
+    li {
+      &:first-child {
+        margin-left: 0px !important;
+      }
+      &:last-child {
+        margin-right: 0px !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.offcanvas-backdrop {
+  z-index: 2;
+}
+
+.offcanvas {
+  width: 720px !important;
+  background-color: $color-88B3DA;
+  z-index: 98;
+  border-top-right-radius: $radius50;
+  border-bottom-right-radius: $radius50;
+  transition: all 1s ease-in-out !important;
+  border-right: 0px !important;
+
+  .offcanvas-body {
+    .nav-menu {
+      height: calc(100vh - 160px);
+      overflow-y: auto;
+      padding-inline: 60px;
+    }
+  }
+}
