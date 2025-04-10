@@ -1,17 +1,45 @@
 .center-img-content-section {
-    .center-img-section-img {
-        height: 746px;
-    }
+  .center-img-section-img {
+    height: 746px;
+  }
 }
 
 .right-img-section {
-    .right-img {
-        height: 660px;
-    }
+  .right-img {
+    height: 660px;
+  }
 }
 
 .left-img-section {
-    .left-img {
-        height: 619px;
+  .left-img {
+    height: 619px;
+  }
+}
+.left-right-with-logo-section {
+  .left-right-img {
+    height: 578px;
+  }
+  .logo--img {
+    height: 160px;
+    width: 160px;
+    right: -72px;
+    top: 85px;
+  }
+  .right-img {
+    .logo--img {
+      left: -72px;
+      top: 85px;
     }
+  }
+}
+
+.two-panel-section{
+ .bg--section{
+    padding-inline: 76px 66px;
+ }   
+}
+.news-two-panel-section{
+ .bg--section{
+    padding-inline: 58px;
+ }   
 }

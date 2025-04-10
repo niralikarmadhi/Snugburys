@@ -230,6 +230,10 @@
     opacity: $opacity32;
 }
 
+.border-505050{
+    border-color: $color-505050 !important;
+}
+
 @include media-breakpoint-down(lg) {
 
     .font10 {
