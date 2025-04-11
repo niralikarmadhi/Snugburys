@@ -11,8 +11,25 @@
       &:first-child {
         margin-left: 0px !important;
       }
+
       &:last-child {
         margin-right: 0px !important;
+      }
+    }
+  }
+
+  .social-icon-group {
+    .social-bg {
+      border: 1.5px solid $white;
+      height: 55px;
+      width: 55px;
+
+      &:last-child {
+        margin-right: 0 !important;
+      }
+
+      img {
+        height: 22px;
       }
     }
   }

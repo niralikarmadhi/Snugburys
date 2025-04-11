@@ -18383,6 +18383,17 @@ form input.white-input::placeholder {
 .footer .footer-menu li:last-child {
   margin-right: 0px !important;
 }
+.footer .social-icon-group .social-bg {
+  border: 1.5px solid #fff;
+  height: 55px;
+  width: 55px;
+}
+.footer .social-icon-group .social-bg:last-child {
+  margin-right: 0 !important;
+}
+.footer .social-icon-group .social-bg img {
+  height: 22px;
+}
 
 .center-img-content-section .center-img-section-img {
   height: 746px;
@@ -18498,13 +18509,13 @@ form input.white-input::placeholder {
   background-color: #fde5e9;
 }
 
-.social-icon .social-bg {
+.social-icon-group .social-bg {
   width: 55px;
   height: 55px;
   border: 1.5px solid #707070;
 }
-.social-icon .social-bg .social-icon {
-  width: 15px;
+.social-icon-group .social-bg .img {
+  height: 21px;
 }
 
 .faq-content {
