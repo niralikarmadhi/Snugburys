@@ -18123,11 +18123,16 @@ form input.white-input::placeholder {
 }
 
 .upcoming-events .event--img {
-  height: 470px;
+  height: 484px;
 }
 .upcoming-events .event--img .event-date {
+  border: 1px solid #fff;
   top: 30px;
   left: 30px;
+  height: 50px;
+}
+.upcoming-events .event--img .event-date .left-date {
+  border-right: 1px solid #fff;
 }
 .upcoming-events .event-content {
   padding-inline: 70px 58px;

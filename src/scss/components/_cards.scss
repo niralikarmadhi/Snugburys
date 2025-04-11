@@ -78,10 +78,17 @@
 
 .upcoming-events {
   .event--img {
-    height: 470px;
-    .event-date{
+    height: 484px;
+
+    .event-date {
+      border: 1px solid $white;
       top: 30px;
       left: 30px;
+      height: 50px;
+
+      .left-date {
+        border-right: 1px solid $white;
+      }
     }
   }
 
