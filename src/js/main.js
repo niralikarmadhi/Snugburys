@@ -11,6 +11,7 @@ import { Parts } from './parts/parts.js'
 import { Truncate } from './parts/truncate.js';
 import { Accordion } from './parts/accordion.js';
 import { Privacy } from './parts/privacy.js';
+import { Header } from './parts/header.js';
 
 
 // export for others scripts to use
@@ -45,6 +46,9 @@ $(function () {
 
   window.privacy = new Privacy();
   window.privacy.init();
+
+  window.header = new Header();
+  window.header.init();
 });
 
 // ===========================================================================
