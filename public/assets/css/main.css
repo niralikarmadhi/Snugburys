@@ -18438,8 +18438,46 @@ form input.white-input::placeholder {
   padding-inline: 58px;
 }
 
-.snugburys-section .media-img {
+.snugburys-section .snugburys-img-group .snugburys-img-div {
+  padding-inline: 17px !important;
+}
+.snugburys-section .snugburys-img-group .snugburys-img-div:first-child {
+  top: 75px;
+  left: 173px;
+}
+.snugburys-section .snugburys-img-group .snugburys-img-div:first-child .social-icon {
+  top: 14px;
+  right: 12px;
+}
+.snugburys-section .snugburys-img-group .snugburys-img-div:nth-child(2) {
+  top: 95px;
+  right: 62px;
+}
+.snugburys-section .snugburys-img-group .snugburys-img-div:nth-child(2) .social-icon {
+  top: 14px;
+  right: 12px;
+}
+.snugburys-section .snugburys-img-group .snugburys-img-div:nth-child(3) {
+  left: 60px;
+  bottom: 110px;
+}
+.snugburys-section .snugburys-img-group .snugburys-img-div:nth-child(3) .social-icon {
+  top: 80px;
+  right: 12px;
+}
+.snugburys-section .snugburys-img-group .snugburys-img-div:nth-child(4) {
+  bottom: 72px;
+  right: 170px;
+}
+.snugburys-section .snugburys-img-group .snugburys-img-div:nth-child(4) .social-icon {
+  top: 14px;
+  right: 12px;
+}
+.snugburys-section .snugburys-img-group .snugburys-img-div .snugburys-img {
   height: 206px;
+}
+.snugburys-section .snugburys-img-group .snugburys-img-div .snugburys-img .social-icon {
+  height: 21px;
 }
 
 .news-cards-section .filter-button {
