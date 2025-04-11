@@ -18125,6 +18125,10 @@ form input.white-input::placeholder {
 .upcoming-events .event--img {
   height: 470px;
 }
+.upcoming-events .event--img .event-date {
+  top: 30px;
+  left: 30px;
+}
 .upcoming-events .event-content {
   padding-inline: 70px 58px;
 }

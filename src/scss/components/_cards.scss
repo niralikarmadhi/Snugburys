@@ -79,6 +79,10 @@
 .upcoming-events {
   .event--img {
     height: 470px;
+    .event-date{
+      top: 30px;
+      left: 30px;
+    }
   }
 
   .event-content {
