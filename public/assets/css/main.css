@@ -18429,6 +18429,10 @@ form input.white-input::placeholder {
   padding-inline: 58px;
 }
 
+.snugburys-section .media-img {
+  height: 206px;
+}
+
 .news-cards-section .filter-button {
   height: 61px;
   background-color: transparent;
