@@ -49,6 +49,14 @@
 }
 
 .snugburys-section {
+  .btnA {
+    &:hover {
+      img {
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+
   .snugburys-img-group {
     .snugburys-img-div {
       padding-inline: 17px !important;

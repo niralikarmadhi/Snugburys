@@ -18438,6 +18438,9 @@ form input.white-input::placeholder {
   padding-inline: 58px;
 }
 
+.snugburys-section .btnA:hover img {
+  filter: brightness(0) invert(1);
+}
 .snugburys-section .snugburys-img-group .snugburys-img-div {
   padding-inline: 17px !important;
 }
