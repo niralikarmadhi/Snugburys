@@ -1,9 +1,16 @@
 .hero-section {
   height: 780px;
+  @include media-breakpoint-down(lg) {
+    height: 670px;
+  }
   .hero-bg-layer {
-    background: linear-gradient(180deg, $black, $white); 
+    background: linear-gradient(180deg, $black, $white);
   }
   .hero-curve {
     bottom: -2px;
+
+    @include media-breakpoint-down(lg) {
+      height: 70px;
+    }
   }
 }

@@ -1,24 +1,40 @@
 .center-img-content-section {
   .center-img-section-img {
     height: 746px;
+
+    @include media-breakpoint-down(lg) {
+      height: 340px;
+    }
   }
 }
 
 .right-img-section {
   .right-img {
     height: 660px;
+
+    @include media-breakpoint-down(lg) {
+      height: 380px;
+    }
   }
 }
 
 .left-img-section {
   .left-img {
     height: 619px;
+
+    @include media-breakpoint-down(lg) {
+      height: 380px;
+    }
   }
 }
 
 .left-right-with-logo-section {
   .left-right-img {
     height: 578px;
+
+    @include media-breakpoint-down(lg) {
+      height: 380px;
+    }
   }
 
   .logo--img {
@@ -37,8 +53,17 @@
 }
 
 .two-panel-section {
+  .two-panel-img {
+    @include media-breakpoint-down(lg) {
+      height: 345px !important;
+    }
+  }
   .bg--section {
     padding-inline: 76px 66px;
+
+    @include media-breakpoint-down(lg) {
+      padding-inline: 24px 30px;
+    }
   }
 }
 
@@ -59,15 +84,23 @@
 
   .snugburys-img-group {
     .snugburys-img-div {
-      padding-inline: 17px !important;
-
       &:first-child {
         top: 75px;
         left: 173px;
 
-        .social-icon {
-          top: 14px;
-          right: 12px;
+        @include media-breakpoint-down(xl) {
+          top: 60px;
+          left: 120px;
+        }
+
+        @include media-breakpoint-down(lg) {
+          top: 25px;
+          left: 75px;
+        }
+
+        @include media-breakpoint-down(md) {
+          top: 30px;
+          left: 70px;
         }
       }
 
@@ -75,37 +108,71 @@
         top: 95px;
         right: 62px;
 
-        .social-icon {
-          top: 14px;
-          right: 12px;
+        @include media-breakpoint-down(lg) {
+          top: 50px;
+          right: 30px;
+        }
+
+        @include media-breakpoint-down(md) {
+          top: 76px;
+          right: 25px;
         }
       }
 
       &:nth-child(3) {
         left: 60px;
         bottom: 110px;
-
-        .social-icon {
-          top: 80px;
-          right: 12px;
+        @include media-breakpoint-down(lg) {
+          left: 50px;
+          bottom: 80px;
+        }
+        @include media-breakpoint-down(md) {
+          left: 25px;
+          bottom: 70px;
         }
       }
 
       &:nth-child(4) {
         bottom: 72px;
         right: 170px;
-
-        .social-icon {
-          top: 14px;
-          right: 12px;
+        @include media-breakpoint-down(xl) {
+          bottom: 50px;
+          right: 100px;
+        }
+        @include media-breakpoint-down(lg) {
+          bottom: 40px;
+          right: 75px;
+        }
+        @include media-breakpoint-down(md) {
+          bottom: 30px;
+          right: 45px;
         }
       }
 
       .snugburys-img {
+        width: 206px;
         height: 206px;
+
+        @include media-breakpoint-down(lg) {
+          height: 155px;
+          width: 155px;
+        }
+
+        @include media-breakpoint-down(md) {
+          height: 105px;
+          width: 105px;
+        }
 
         .social-icon {
           height: 21px;
+          top: 14px;
+          right: 12px;
+
+          @include media-breakpoint-down(lg) {
+            height: 16px;
+            top: 8px;
+            right: 8px;
+          }
         }
       }
     }

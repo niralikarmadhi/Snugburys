@@ -1,103 +1,128 @@
 .latest-news-slider,
 .flavour-slider,
 .creations-slider {
-    .slick-list {
-        margin-inline: -8px;
+  .slick-list {
+    margin-inline: -8px;
 
-        .slick-slide {
-            padding-inline: 8px;
-        }
+    .slick-slide {
+      padding-inline: 8px;
     }
+  }
+}
+
+.related-product-slider {
+  .slick-list {
+    margin-inline: -11px;
+
+    @include media-breakpoint-down(lg) {
+      overflow: visible !important;
+    }
+
+    .slick-slide {
+      padding-inline: 11px;
+    }
+  }
 }
 
 .latest-news-slider,
 .flavour-slider,
 .creations-slider {
-    .slick-list {
-        overflow: visible !important;
-    }
+  .slick-list {
+    overflow: visible !important;
+  }
 }
 
 .center-img-content-section,
 .find-slider-section,
 .right-slider-section,
 .creation-section {
-    .slick-arrows {
+  .slick-arrows {
+    .prev-arrow,
+    .next-arrow {
+      background-color: $white;
+      border-radius: 6px;
+      height: 50px;
+      width: 57px;
 
-        .prev-arrow,
-        .next-arrow {
-            background-color: $white;
-            border-radius: 6px;
-            height: 50px;
-            width: 57px;
+      @include media-breakpoint-down(lg) {
+        height: 34px;
+        width: 40px;
+      }
 
-            img {
-                height: 15px;
-            }
+      img {
+        height: 15px;
+        @include media-breakpoint-down(lg) {
+          height: 10px;
         }
+      }
     }
+  }
 }
 
 .marque-slider-section {
-    .marque-slider {
-        .marque-text {
-            padding-inline: 60px;
+  .marque-slider {
+    .marque-text {
+      padding-inline: 60px;
 
-            &::after {
-                content: "*";
-                position: absolute;
-                top: 50%;
-                font-size: $font167;
-                left: -40px;
-            }
+      &::after {
+        content: "*";
+        position: absolute;
+        top: 50%;
+        font-size: $font167;
+        left: -40px;
+
+        @include media-breakpoint-down(lg) {
+          top: 35%;
+          font-size: 85px;
         }
+      }
     }
+  }
 }
 
 .right-slider {
-    margin-bottom: 0px !important;
+  margin-bottom: 0px !important;
+  height: 601px;
+
+  .right-slider-section-img {
     height: 601px;
+  }
 
-    .right-slider-section-img {
-        height: 601px;
-    }
+  .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 35px !important;
 
-    .slick-dots {
+    li {
+      height: 10px;
+      width: 10px;
+      background-color: rgba($color: $black, $alpha: 0.33);
+      border-radius: 50%;
+      margin-inline: 6px !important;
+
+      &.slick-active {
+        border: 1px solid $color-F9AFBD;
+        height: 16px;
+        width: 16px;
+        background-color: transparent;
         display: flex;
         align-items: center;
         justify-content: center;
-        bottom: 35px !important;
 
-        li {
-            height: 10px;
-            width: 10px;
-            background-color: rgba($color: $black, $alpha: 0.33);
-            border-radius: 50%;
-            margin-inline: 6px !important;
-
-            &.slick-active {
-                border: 1px solid $color-F9AFBD;
-                height: 16px;
-                width: 16px;
-                background-color: transparent;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                &::after {
-                    content: '';
-                    height: 10px;
-                    width: 10px;
-                    background-color: $color-F9AFBD;
-                    border-radius: 50%;
-                    display: block;
-                }
-            }
-
-            button {
-                display: none !important;
-            }
+        &::after {
+          content: "";
+          height: 10px;
+          width: 10px;
+          background-color: $color-F9AFBD;
+          border-radius: 50%;
+          display: block;
         }
+      }
 
+      button {
+        display: none !important;
+      }
     }
+  }
 }

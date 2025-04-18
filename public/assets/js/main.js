@@ -20467,7 +20467,26 @@ var Plugins = /*#__PURE__*/function () {
         dots: false,
         arrows: true,
         prevArrow: ".find-slider-section .prev-arrow",
-        nextArrow: ".find-slider-section .next-arrow"
+        nextArrow: ".find-slider-section .next-arrow",
+        responsive: [{
+          breakpoint: 1025,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1
+          }
+        }, {
+          breakpoint: 769,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        }, {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }]
       });
     }
   }, {
@@ -20507,6 +20526,7 @@ var Parts = /*#__PURE__*/function () {
       this.CenterImgSlider();
       this.RightImgSlider();
       this.CreationSlider();
+      this.RelatedProductSlider();
     }
   }, {
     key: "LatestSlider",
@@ -20517,16 +20537,45 @@ var Parts = /*#__PURE__*/function () {
         infinite: false,
         arrows: false,
         responsive: [{
-          breakpoint: 768,
+          breakpoint: 1440,
           settings: {
             arrows: false,
-            slidesToShow: 3
+            slidesToShow: 2
           }
         }, {
           breakpoint: 480,
           settings: {
             arrows: false,
             slidesToShow: 1
+          }
+        }]
+      });
+    }
+  }, {
+    key: "RelatedProductSlider",
+    value: function RelatedProductSlider() {
+      $('.related-product-slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: false,
+        arrows: false,
+        responsive: [{
+          breakpoint: 1440,
+          settings: {
+            arrows: false,
+            slidesToShow: 2
+          }
+        }, {
+          breakpoint: 1024,
+          settings: {
+            arrows: false,
+            slidesToShow: 1
+          }
+        }, {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            slidesToShow: 2
           }
         }]
       });

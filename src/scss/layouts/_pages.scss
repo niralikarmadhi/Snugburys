@@ -1,0 +1,10 @@
+.contact-section,
+.snugburys-section {
+  border-bottom-left-radius: $radius50;
+  border-bottom-right-radius: $radius50;
+
+  @include media-breakpoint-down(lg) {
+    border-bottom-left-radius: $radius20;
+    border-bottom-right-radius: $radius20;
+  }
+}

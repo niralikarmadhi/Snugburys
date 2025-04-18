@@ -1,14 +1,26 @@
 form {
-    input {
-        &.white-input {
-            height: 61px;
+  input {
+    &.white-input {
+      height: 61px;
+      padding-inline: 22px;
 
-            &::placeholder {
-                font-size: $font17;
-                line-height: $leading28;
-                font-family: "hvdtrial_brandon_text_regular";
-                color: $color-2F2F2F !important;
-            }
-        }
+      &::placeholder {
+        font-size: $font17;
+        line-height: $leading28;
+        font-family: "hvdtrial_brandon_text_regular";
+        color: $color-2F2F2F !important;
+        opacity: 60%;
+      }
     }
+  }
+  textarea {
+    height: 161px;
+    @include media-breakpoint-down(lg) {
+      height: 135px;
+    }
+    &.white-input {
+      padding-inline: 22px;
+      padding-top: 18px;
+    }
+  }
 }
