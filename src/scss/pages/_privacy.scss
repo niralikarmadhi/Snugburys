@@ -1,44 +1,103 @@
+// .privacy-section {
+//   border-radius: 0px 0px 50px 50px;
+//   .left-content {
+//     @include media-breakpoint-down(lg) {
+//       overflow-x: auto;
+//     }
+//     ul {
+//       top: 225px;
+//       li {
+//         a {
+//           &::after {
+//             content: "";
+//             background-image: url("../../../public/assets/images/grey-right-arrow.svg");
+//             background-position: center;
+//             background-repeat: no-repeat;
+//             background-size: cover;
+//             position: absolute;
+//             top: 50%;
+//             left: 0px;
+//             transform: translate(0%, -50%);
+//             width: 23px;
+//             height: 15px;
+//             display: none;
+//           }
+//         }
+
+//         &.active {
+//           a {
+//             padding-left: 30px;
+
+//             &::after {
+//               display: block;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   .single-content {
+//     &:first-child {
+//       padding-top: 0 !important;
+//     }
+//   }
+// }
+
 .privacy-section {
-    border-radius: 0px 0px 50px 50px;
-    .left-content {
-        ul {
-            top: 135px;
+  .privacy-left-content {
+    .privacy-links {
+      top: 225px;
 
-            li {
-                a {
+      ul {
+        @include media-breakpoint-down(lg) {
+          overflow-x: auto;
+        }
 
-                    &::after {
-                        content: '';
-                        background-image: url("../../../public/assets/images/grey-right-arrow.svg");
-                        background-position: center;
-                        background-repeat: no-repeat;
-                        background-size: cover;
-                        position: absolute;
-                        top: 50%;
-                        left: 0px;
-                        transform: translate(0%, -50%);
-                        width: 23px;
-                        height: 15px;
-                        display: none;
-                    }
-                }
-
-                &.active {
-                    a {
-                        padding-left: 30px;
-
-                        &::after {
-                            display: block;
-                        }
-                    }
-                }
+        li {
+          a {
+            &::after {
+              content: "";
+              background-image: url("../../../public/assets/images/grey-right-arrow.svg");
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+              position: absolute;
+              top: 50%;
+              left: 0px;
+              transform: translate(0%, -50%);
+              width: 23px;
+              height: 15px;
+              display: none;
             }
-        }
-    }
+          }
+          &.active {
+            a {
+              font-weight: 600 !important;
+              &::after {
+                display: block;
+              }
+            }
+          }
 
-    .single-content {
-        &:first-child {
-            padding-top: 0 !important;
+          &:last-child {
+            margin-bottom: 0 !important;
+            margin-right: 0 !important;
+          }
+
+          @include media-breakpoint-down(lg) {
+            text-wrap: nowrap;
+          }
         }
+      }
     }
+  }
+
+  .privacy-right-content {
+    .single-content {
+      &:first-child {
+        margin-top: 0px !important;
+      }
+    }
+  }
 }

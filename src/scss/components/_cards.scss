@@ -140,18 +140,20 @@
 .creation-cards {
   .creation-img {
     height: 428px;
-  }
-}
 
-.news-cards {
-  .news-card-img {
-    height: 428px;
+    @include media-breakpoint-down(lg) {
+      height: 278px;
+    }
   }
 }
 
 .news-two-panel-section {
   .right-image {
     height: 565px;
+
+    @include media-breakpoint-down(lg) {
+      height: 345px;
+    }
   }
 }
 

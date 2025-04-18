@@ -1,29 +1,36 @@
 export class Privacy {
     init() {
-        this.Privacy();
+        this.PrivacySection();
     }
-    Privacy() {
+    PrivacySection() {
         $(document).ready(function () {
-            var links = $("#privacy-links a");
-            links.first().parent().addClass("active");
+            if ($(".privacy-section").length) {
+                var links = $("#privacy-links a");
+                var sections = links.map(function () {
+                    return $($(this).attr("href"));
+                });
 
-            $(window).scroll(function () {
-                var fromTop = $(this).scrollTop();
+                links.first().parent().addClass("active");
 
-                links.each(function () {
-                    var section = $($(this).attr("href"));
+                $(window).scroll(function () {
+                    var fromTop = $(this).scrollTop() + 100; // Offset added to improve accuracy
 
-                    if (
-                        section.position().top <= fromTop &&
-                        section.position().top + section.outerHeight() > fromTop
-                    ) {
-                        links.each(function () {
-                            $(this).parent().removeClass("active");
-                        });
-                        $(this).parent().addClass("active");
+                    var currentSection = sections.map(function () {
+                        if ($(this).offset().top <= fromTop) {
+                            return this;
+                        }
+                    });
+
+                    currentSection = currentSection[currentSection.length - 1];
+
+                    if (currentSection) {
+                        var activeId = "#" + $(currentSection).attr("id");
+
+                        links.parent().removeClass("active");
+                        links.filter("[href='" + activeId + "']").parent().addClass("active");
                     }
                 });
-            });
+            }
         });
     }
 }

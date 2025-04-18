@@ -82,10 +82,13 @@
 
 .right-slider {
   margin-bottom: 0px !important;
-  height: 601px;
 
   .right-slider-section-img {
     height: 601px;
+
+    @include media-breakpoint-down(lg) {
+      height: 380px;
+    }
   }
 
   .slick-dots {
