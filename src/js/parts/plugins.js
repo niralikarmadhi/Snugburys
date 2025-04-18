@@ -13,13 +13,36 @@ export class Plugins {
       arrows: true,
       prevArrow: ".find-slider-section .prev-arrow",
       nextArrow: ".find-slider-section .next-arrow",
+      responsive: [
+        {
+          breakpoint: 1025,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 769,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
     });
   }
   marqueSlider() {
     $(".marque-slider").slick({
       speed: 9000,
       autoplay: true,
-      autoplaySpeed: 0, 
+      autoplaySpeed: 0,
       cssEase: "linear",
       slidesToShow: 1,
       slidesToScroll: 1,

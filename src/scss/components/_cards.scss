@@ -14,15 +14,68 @@
 .news-cards {
   .latest-news-img {
     height: 428px;
+
+    @include media-breakpoint-down(lg) {
+      height: 276px;
+    }
   }
 }
 
+.flavours-section {
+  .flavour-card {
+    @include media-breakpoint-down(lg) {
+      height: 230px;
+    }
+
+    .flavour-img {
+      @include media-breakpoint-down(lg) {
+        height: 200px;
+      }
+    }
+
+    .flavour-button {
+      bottom: -80px;
+
+      @include media-breakpoint-down(lg) {
+        bottom: -120px;
+        width: 100%;
+        padding-inline: 8px;
+      }
+
+      .btnA {
+        @include media-breakpoint-down(lg) {
+          padding: 8px 12px;
+          height: fit-content;
+          text-wrap: wrap !important;
+        }
+      }
+    }
+
+    &:hover {
+      .flavour-button {
+        bottom: 34px;
+
+        @include media-breakpoint-down(lg) {
+          bottom: 10px;
+        }
+      }
+    }
+  }
+}
 
 .flavour-card {
   height: 435px;
 
+  @include media-breakpoint-down(lg) {
+    height: 357px;
+  }
+
   .flavour-img {
     height: 400px;
+
+    @include media-breakpoint-down(lg) {
+      height: 327px;
+    }
   }
 
   .flavour-button {
@@ -34,27 +87,53 @@
       bottom: 34px;
     }
   }
-
 }
 
 .two-cards {
-  height: 447px;
+  &:last-child {
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 0px !important;
+    }
+  }
+  .two-card {
+    height: 447px;
 
-  .two-card-layer {
-    background-color: rgba($color: $black, $alpha: 0.15);
+    @include media-breakpoint-down(lg) {
+      height: 280px;
+    }
+
+    .two-card-layer {
+      background-color: rgba($color: $black, $alpha: 0.15);
+    }
   }
 }
 
 .related-cards {
   .related-cards-img {
     height: 428px;
+
+    @include media-breakpoint-down(lg) {
+      height: 225px;
+    }
   }
 }
 
 .three-content-cards {
-  .three-content-cards-img {
-    width: 251px;
-    height: 251px;
+  &:last-child {
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 0px !important;
+    }
+  }
+  .three-content-card {
+    .three-content-cards-img {
+      width: 251px;
+      height: 251px;
+
+      @include media-breakpoint-down(lg) {
+        width: 175px;
+        height: fit-content;
+      }
+    }
   }
 }
 
@@ -80,11 +159,21 @@
   .event--img {
     height: 484px;
 
+    @include media-breakpoint-down(lg) {
+      height: 300px;
+    }
+
     .event-date {
       border: 1px solid $white;
       top: 30px;
       left: 30px;
       height: 50px;
+
+      @include media-breakpoint-down(lg) {
+        top: 16px;
+        left: 16px;
+        height: 40px;
+      }
 
       .left-date {
         border-right: 1px solid $white;
@@ -94,5 +183,19 @@
 
   .event-content {
     padding-inline: 70px 58px;
+
+    @include media-breakpoint-down(lg) {
+      padding-inline: 25px;
+    }
+  }
+}
+
+.three-content-section {
+  .three-content-card {
+    &:last-child {
+      @include media-breakpoint-down(lg) {
+        margin-bottom: 0px !important;
+      }
+    }
   }
 }

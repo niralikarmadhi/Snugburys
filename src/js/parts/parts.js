@@ -5,6 +5,7 @@ export class Parts {
         this.CenterImgSlider();
         this.RightImgSlider();
         this.CreationSlider();
+        this.RelatedProductSlider();
     }
 
     LatestSlider() {
@@ -15,10 +16,10 @@ export class Parts {
             arrows: false,
             responsive: [
                 {
-                    breakpoint: 768,
+                    breakpoint: 1440,
                     settings: {
                         arrows: false,
-                        slidesToShow: 3
+                        slidesToShow: 2
                     }
                 },
                 {
@@ -26,6 +27,38 @@ export class Parts {
                     settings: {
                         arrows: false,
                         slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    }
+
+    RelatedProductSlider() {
+        $('.related-product-slider').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: false,
+            arrows: false,
+            responsive: [
+                {
+                    breakpoint: 1440,
+                    settings: {
+                        arrows: false,
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        arrows: false,
+                        slidesToShow: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        slidesToShow: 2
                     }
                 }
             ]
