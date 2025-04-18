@@ -20457,71 +20457,6 @@ var Plugins = /*#__PURE__*/function () {
     value: function init() {
       this.flavourSlider();
       this.marqueSlider();
-    }
-  }, {
-    key: "flavourSlider",
-    value: function flavourSlider() {
-      $(".flavour-slider").slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        dots: false,
-        arrows: true,
-        prevArrow: ".find-slider-section .prev-arrow",
-        nextArrow: ".find-slider-section .next-arrow",
-        responsive: [{
-          breakpoint: 1025,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1
-          }
-        }, {
-          breakpoint: 769,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1
-          }
-        }, {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }]
-      });
-    }
-  }, {
-    key: "marqueSlider",
-    value: function marqueSlider() {
-      $(".marque-slider").slick({
-        speed: 9000,
-        autoplay: true,
-        autoplaySpeed: 0,
-        cssEase: "linear",
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        variableWidth: true,
-        infinite: true,
-        arrows: false,
-        dots: false
-      });
-    }
-  }]);
-  return Plugins;
-}();
-;// CONCATENATED MODULE: ./src/js/parts/parts.js
-function parts_typeof(obj) { "@babel/helpers - typeof"; return parts_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, parts_typeof(obj); }
-function parts_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-function parts_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, parts_toPropertyKey(descriptor.key), descriptor); } }
-function parts_createClass(Constructor, protoProps, staticProps) { if (protoProps) parts_defineProperties(Constructor.prototype, protoProps); if (staticProps) parts_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-function parts_toPropertyKey(arg) { var key = parts_toPrimitive(arg, "string"); return parts_typeof(key) === "symbol" ? key : String(key); }
-function parts_toPrimitive(input, hint) { if (parts_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (parts_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
-var Parts = /*#__PURE__*/function () {
-  function Parts() {
-    parts_classCallCheck(this, Parts);
-  }
-  parts_createClass(Parts, [{
-    key: "init",
-    value: function init() {
       this.LatestSlider();
       this.CenterImgSlider();
       this.RightImgSlider();
@@ -20608,27 +20543,33 @@ var Parts = /*#__PURE__*/function () {
   }, {
     key: "RightImgSlider",
     value: function RightImgSlider() {
-      $('.right-slider').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: false,
-        arrows: true,
-        dots: true,
-        prevArrow: '.right-slider-section .prev-arrow',
-        nextArrow: '.right-slider-section .next-arrow',
-        responsive: [{
-          breakpoint: 768,
-          settings: {
-            arrows: false,
-            slidesToShow: 3
-          }
-        }, {
-          breakpoint: 480,
-          settings: {
-            arrows: false,
-            slidesToShow: 1
-          }
-        }]
+      $('.right-slider-section').each(function () {
+        var $section = $(this);
+        var $slider = $section.find('.right-slider');
+        var $prevArrow = $section.find('.prev-arrow');
+        var $nextArrow = $section.find('.next-arrow');
+        $slider.slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: false,
+          arrows: true,
+          dots: true,
+          prevArrow: $prevArrow,
+          nextArrow: $nextArrow,
+          responsive: [{
+            breakpoint: 768,
+            settings: {
+              arrows: true,
+              slidesToShow: 3
+            }
+          }, {
+            breakpoint: 480,
+            settings: {
+              arrows: true,
+              slidesToShow: 1
+            }
+          }]
+        });
       });
     }
   }, {
@@ -20639,24 +20580,87 @@ var Parts = /*#__PURE__*/function () {
         slidesToScroll: 1,
         infinite: false,
         arrows: true,
-        dots: true,
         prevArrow: '.creation-section .prev-arrow',
         nextArrow: '.creation-section .next-arrow',
         responsive: [{
-          breakpoint: 768,
+          breakpoint: 1440,
           settings: {
-            arrows: false,
-            slidesToShow: 3
+            arrows: true,
+            slidesToShow: 2
           }
         }, {
-          breakpoint: 480,
+          breakpoint: 1024,
           settings: {
-            arrows: false,
+            arrows: true,
             slidesToShow: 1
           }
         }]
       });
     }
+  }, {
+    key: "flavourSlider",
+    value: function flavourSlider() {
+      $(".flavour-slider").slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true,
+        prevArrow: ".find-slider-section .prev-arrow",
+        nextArrow: ".find-slider-section .next-arrow",
+        responsive: [{
+          breakpoint: 1025,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1
+          }
+        }, {
+          breakpoint: 769,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        }, {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }]
+      });
+    }
+  }, {
+    key: "marqueSlider",
+    value: function marqueSlider() {
+      $(".marque-slider").slick({
+        speed: 9000,
+        autoplay: true,
+        autoplaySpeed: 0,
+        cssEase: "linear",
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        variableWidth: true,
+        infinite: true,
+        arrows: false,
+        dots: false
+      });
+    }
+  }]);
+  return Plugins;
+}();
+;// CONCATENATED MODULE: ./src/js/parts/parts.js
+function parts_typeof(obj) { "@babel/helpers - typeof"; return parts_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, parts_typeof(obj); }
+function parts_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function parts_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, parts_toPropertyKey(descriptor.key), descriptor); } }
+function parts_createClass(Constructor, protoProps, staticProps) { if (protoProps) parts_defineProperties(Constructor.prototype, protoProps); if (staticProps) parts_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function parts_toPropertyKey(arg) { var key = parts_toPrimitive(arg, "string"); return parts_typeof(key) === "symbol" ? key : String(key); }
+function parts_toPrimitive(input, hint) { if (parts_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (parts_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+var Parts = /*#__PURE__*/function () {
+  function Parts() {
+    parts_classCallCheck(this, Parts);
+  }
+  parts_createClass(Parts, [{
+    key: "init",
+    value: function init() {}
   }]);
   return Parts;
 }();
@@ -20709,12 +20713,28 @@ var Accordion = /*#__PURE__*/function () {
     value: function Accordion() {
       $(document).ready(function () {
         // Open the first child by default
-        $('.closet-header').first().addClass('active').next('.closet-content').slideDown();
+        $('.closet-header').first().addClass('active').closest('.accordion-item').addClass('active') // Add to accordion-item
+        .find('.closet-content').slideDown();
 
         // Handle click events for closet headers
         $('.closet-header').click(function () {
-          $(this).toggleClass('active').next('.closet-content').slideToggle();
-          $('.closet-header').not(this).removeClass('active').next('.closet-content').slideUp();
+          var $this = $(this);
+          var $parentItem = $this.closest('.accordion-item');
+
+          // Toggle clicked item
+          var isActive = $this.hasClass('active');
+
+          // Remove active from all
+          $('.closet-header').removeClass('active');
+          $('.accordion-item').removeClass('active');
+          $('.closet-content').slideUp();
+
+          // Add active if it wasn't active before
+          if (!isActive) {
+            $this.addClass('active');
+            $parentItem.addClass('active');
+            $this.next('.closet-content').slideDown();
+          }
         });
       });
     }
@@ -20735,26 +20755,34 @@ var Privacy = /*#__PURE__*/function () {
   privacy_createClass(Privacy, [{
     key: "init",
     value: function init() {
-      this.Privacy();
+      this.PrivacySection();
     }
   }, {
-    key: "Privacy",
-    value: function Privacy() {
+    key: "PrivacySection",
+    value: function PrivacySection() {
       $(document).ready(function () {
-        var links = $("#privacy-links a");
-        links.first().parent().addClass("active");
-        $(window).scroll(function () {
-          var fromTop = $(this).scrollTop();
-          links.each(function () {
-            var section = $($(this).attr("href"));
-            if (section.position().top <= fromTop && section.position().top + section.outerHeight() > fromTop) {
-              links.each(function () {
-                $(this).parent().removeClass("active");
-              });
-              $(this).parent().addClass("active");
+        if ($(".privacy-section").length) {
+          var links = $("#privacy-links a");
+          var sections = links.map(function () {
+            return $($(this).attr("href"));
+          });
+          links.first().parent().addClass("active");
+          $(window).scroll(function () {
+            var fromTop = $(this).scrollTop() + 100; // Offset added to improve accuracy
+
+            var currentSection = sections.map(function () {
+              if ($(this).offset().top <= fromTop) {
+                return this;
+              }
+            });
+            currentSection = currentSection[currentSection.length - 1];
+            if (currentSection) {
+              var activeId = "#" + $(currentSection).attr("id");
+              links.parent().removeClass("active");
+              links.filter("[href='" + activeId + "']").parent().addClass("active");
             }
           });
-        });
+        }
       });
     }
   }]);

@@ -1,9 +1,17 @@
 .news-content-section {
-    .news-open-img {
-        height: 610px;
+  .news-open-img {
+    height: 610px;
+
+    @include media-breakpoint-down(lg) {
+      height: 280px;
     }
-    .news-left-content{
-        top: 230px;
-        height: calc(100vh - 500px);
+  }
+  .news-left-content {
+    top: 230px;
+    height: calc(100vh - 500px);
+
+    @include media-breakpoint-down(lg) {
+      height: fit-content;
     }
+  }
 }

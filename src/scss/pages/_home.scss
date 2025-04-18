@@ -70,6 +70,9 @@
 .news-two-panel-section {
   .bg--section {
     padding-inline: 58px;
+    @include media-breakpoint-down(lg) {
+      padding-inline: 24px 30px;
+    }
   }
 }
 
