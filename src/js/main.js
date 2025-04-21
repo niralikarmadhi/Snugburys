@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import '@popperjs/core';
+
 import 'bootstrap/dist/js/bootstrap';
 import 'select2/dist/js/select2.min.js';
 import '../../node_modules/masonry-layout/dist/masonry.pkgd.min';

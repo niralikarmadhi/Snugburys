@@ -3,6 +3,10 @@
     .accordion-item {
       border: 2px solid $color-707070;
 
+      &:last-child{
+        margin-bottom: 0px !important;
+      }
+
       &.active {
         border-color: transparent;
         background-color: $color-FDE5E9;
@@ -89,6 +93,11 @@
 
     @include media-breakpoint-down(lg) {
       width: 24px;
+    }
+  }
+  .contact-form {
+    @include media-breakpoint-up(xl) {
+      padding-top: 0px !important;
     }
   }
 }

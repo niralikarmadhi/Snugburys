@@ -1,49 +1,3 @@
-// .privacy-section {
-//   border-radius: 0px 0px 50px 50px;
-//   .left-content {
-//     @include media-breakpoint-down(lg) {
-//       overflow-x: auto;
-//     }
-//     ul {
-//       top: 225px;
-//       li {
-//         a {
-//           &::after {
-//             content: "";
-//             background-image: url("../../../public/assets/images/grey-right-arrow.svg");
-//             background-position: center;
-//             background-repeat: no-repeat;
-//             background-size: cover;
-//             position: absolute;
-//             top: 50%;
-//             left: 0px;
-//             transform: translate(0%, -50%);
-//             width: 23px;
-//             height: 15px;
-//             display: none;
-//           }
-//         }
-
-//         &.active {
-//           a {
-//             padding-left: 30px;
-
-//             &::after {
-//               display: block;
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-
-//   .single-content {
-//     &:first-child {
-//       padding-top: 0 !important;
-//     }
-//   }
-// }
-
 .privacy-section {
   .privacy-left-content {
     .privacy-links {
@@ -73,7 +27,7 @@
           }
           &.active {
             a {
-              font-weight: 600 !important;
+              padding-left: 30px;
               &::after {
                 display: block;
               }
@@ -96,7 +50,7 @@
   .privacy-right-content {
     .single-content {
       &:first-child {
-        margin-top: 0px !important;
+        padding-top: 0px !important;
       }
     }
   }

@@ -2,10 +2,6 @@
   z-index: 99;
   transition: all 0.3s ease-in-out;
 
-  .container-fluid {
-    padding-inline: 30px;
-  }
-
   &.header-fixed-os {
     transform: translateY(0px);
   }
@@ -19,10 +15,17 @@
     transition: all 0.3s ease-in-out;
     .menu-icon {
       height: 48px;
+       @include media-breakpoint-down(md){
+        height: 30px;
+       }
       .hamburger {
         height: 17px;
         position: relative;
         transition: all 0.3s ease-in-out;
+
+          @include media-breakpoint-down(md){
+            height: 11px;
+          }
 
         .line {
           display: block;
@@ -30,6 +33,11 @@
           height: 3px;
           background-color: $white;
           transition: all 0.3s ease-in-out;
+
+          @include media-breakpoint-down(md){
+width: 36px;
+          height: 2px;
+          }
         }
       }
       &.open {
@@ -37,9 +45,18 @@
           .line {
             &:nth-child(1) {
               transform: rotate(45deg) translate(5px, 5px);
+
+              
+          @include media-breakpoint-down(md){
+transform: rotate(45deg) translate(5px, 0px);
+          }
             }
             &:nth-child(2) {
               transform: rotate(-45deg) translate(5px, -5px);
+
+ @include media-breakpoint-down(md){
+              transform: rotate(-45deg) translate(6px, -2px);
+            }
             }
           }
         }
@@ -47,6 +64,10 @@
     }
     .header-logo {
       height: 38px;
+
+       @include media-breakpoint-down(md){
+        height: 30px;
+       }
       .black-logo {
         display: none;
       }
@@ -84,6 +105,10 @@
       padding: 20px 18px;
       border-radius: $radius20;
       background-color: $color-F9AFBD;
+
+      @include media-breakpoint-down(md){
+        padding: 15px 14px;  border-radius: $radius10;
+      }
     }
   }
 

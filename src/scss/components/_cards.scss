@@ -148,6 +148,16 @@
 }
 
 .news-two-panel-section {
+  .news-left-title {
+    @include media-breakpoint-down(xl) {
+      font-size: $font51;
+      line-height: $leading61;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: $res-font40;
+      line-height: $res-leading50;
+    }
+  }
   .right-image {
     height: 565px;
 
@@ -155,11 +165,19 @@
       height: 345px;
     }
   }
+
+  .bg--section {
+    padding-inline: 58px;
+
+    @include media-breakpoint-down(lg) {
+      padding-inline: 24px 30px;
+    }
+  }
 }
 
 .upcoming-events {
   .event--img {
-    height: 484px;
+    height: 100%;
 
     @include media-breakpoint-down(lg) {
       height: 300px;

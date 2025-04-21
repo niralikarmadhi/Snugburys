@@ -10,6 +10,20 @@
   }
 }
 
+.creations-slider {
+  .slick-list {
+    @include media-breakpoint-down(lg){
+      margin-inline: -10px;
+    }
+    
+    @include media-breakpoint-down(lg){
+      .slick-slide {
+        padding-inline: 10px;
+      }
+    }
+  }
+}
+
 .related-product-slider {
   .slick-list {
     margin-inline: -11px;

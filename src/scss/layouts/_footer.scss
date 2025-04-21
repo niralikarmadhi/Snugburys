@@ -2,12 +2,26 @@
   margin-top: -50px;
   z-index: -1;
 
+  .footer-title{
+     @include media-breakpoint-down(xl) {
+      font-size: $font51;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: $res-font30;
+      line-height: $res-leading40;
+    }
+  }
+
   .location-icon {
     height: 33px;
+
+    @include media-breakpoint-down(lg){
+      height: 24px;
+    }
   }
 
   .footer-menu {
-    li {
+    a {
       &:first-child {
         margin-left: 0px !important;
       }
@@ -24,12 +38,21 @@
       height: 55px;
       width: 55px;
 
+      @include media-breakpoint-down(lg){
+         height: 35px;
+      width: 35px;
+      }
+
       &:last-child {
         margin-right: 0 !important;
       }
 
       img {
         height: 22px;
+
+        @include media-breakpoint-down(lg){
+         height: 13px;
+      }
       }
     }
   }
